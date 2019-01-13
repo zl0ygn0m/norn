@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    
     background-color: darkolivegreen
 }
 
@@ -18,8 +18,8 @@ body {
         display: grid;
         grid-column: 1/13;
         grid-row: 1/2;
-    grid-template-columns: repeat(2,1fr)repeat(3,75px);
-grid-gap: 10px}
+    grid-template-columns: repeat(2,1fr)repeat(3,70px);
+grid-gap: 5px}
 .menu {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -29,13 +29,13 @@ grid-gap: 10px}
 
     .school{margin-top: 15px;
     z-index: 2;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
 grid-column: 2/9;
 grid-row: 1;
 font-size: 24px;padding-left: 20px}
 .phone{margin-top: 15px;
     z-index: 2;
-font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu'; 
 grid-column: 2;
 font-size: 24px;justify-self: flex-end}
 .logo {
@@ -53,15 +53,15 @@ font-size: 24px;justify-self: flex-end}
     grid-column: 4/6;
     font-size: 50px;
     align-self: center;
-    font-family: 'Puritan', sans-serif;
+    font-family: 'Puritan';
 }
-.menu2 {
+.submenu {
     grid-row: 3;
     grid-column: 1/6;
-    font-family: 'Puritan', sans-serif;}
+    font-family: 'Puritan';}
 
 
-.uul { display: flex;
+.line { display: flex;
      justify-content: space-around;
      width: 500px;
      list-style-type: none;
@@ -76,3 +76,33 @@ li a:hover { border-top: 1px solid black;
     transition-duration: 200ms;
 
 } 
+        
+.inst {
+    grid-column: 3;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 15px;
+            z-index: 2;
+font-family: 'Ubuntu';
+}
+
+.vk {
+    grid-column: 4;
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 15px;
+            z-index: 2;
+font-family: 'Ubuntu';
+}
+
+.facebook {
+    grid-column: 5;
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 15px;
+            z-index: 2;
+font-family: 'Ubuntu';
+}
