@@ -11,7 +11,10 @@ body {
     
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 3000px 600px 600px;}
+    grid-template-rows: 1fr 3000px 600px 600px;
+    position: absolute;
+
+    overflow: hidden;}
     header {
         background-color: white;
         position: relative;
@@ -115,8 +118,8 @@ grid-row: 2/7;
 background-image: url(../img/ocean.png)}
 .hill2 {grid-column: 2/13;
     grid-row: 2/7;}
-.subhill{   left: 166px;
-    top: -400px;
+.subhill{   left: 164px;
+    top: -513px;
     background-color: #ffff;
     border: 100px solid #fff;
     border-top: 100px solid transparent;
@@ -128,10 +131,10 @@ position: relative;
 
 transform: rotate(-45deg);
 
-width: 600px;height: 600px;
+width: 1000px;height: 1000px;
 }
-.subhill2{   left: 355px;
-    top: -300px;
+.subhill2{   left: 656px;
+    top: -418px;
     background-color: #ffff;
     border: 100px solid #fff;
     border-top: 100px solid transparent;
@@ -141,7 +144,7 @@ border-right: 100px solid transparent;
 position: relative;
 
 
-transform: rotate(-45deg);
+transform: rotate(-57deg);
 
-width: 400px;height: 400px;
+width: 660px;height: 700px;
 }
