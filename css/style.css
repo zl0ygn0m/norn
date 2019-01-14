@@ -3,7 +3,8 @@ body {
     height: 100%;
     width: 100%;
     
-    background-color: darkolivegreen
+    background-color: darkolivegreen;
+    padding: 0px
 }
 
 .grid {
@@ -20,10 +21,10 @@ body {
         grid-row: 1/2;
     grid-template-columns: repeat(2,1fr)repeat(3,70px);
 grid-gap: 5px}
-.menu {
+.menu {font-size: 26px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);}
+    grid-template-rows: repeat(5, 1fr);}
     @import url('https://fonts.googleapis.com/css?family=Ubuntu');
     @import url('https://fonts.googleapis.com/css?family=Puritan');
 
@@ -46,19 +47,21 @@ font-size: 24px;justify-self: flex-end}
     height: 90px;
     width: 90px;
     margin-left: 20px;
-    align-self: center
-}
+    align-self: center ;
+    z-index: 1;
+ }
 .name {
     grid-row: 2;
     grid-column: 4/6;
     font-size: 50px;
     align-self: center;
     font-family: 'Puritan';
-}
+    z-index: 1;}
 .submenu {
     grid-row: 3;
     grid-column: 1/6;
-    font-family: 'Puritan';}
+    font-family: 'Puritan';
+    z-index: 1;}
 
 
 .line { display: flex;
@@ -105,4 +108,40 @@ font-family: 'Ubuntu';
     margin-top: 15px;
             z-index: 2;
 font-family: 'Ubuntu';
+}
+
+.hill {grid-column: 1/13;
+grid-row: 2/7;
+background-image: url(../img/ocean.png)}
+.hill2 {grid-column: 2/13;
+    grid-row: 2/7;}
+.subhill{   left: 166px;
+    top: -400px;
+    background-color: #ffff;
+    border: 100px solid #fff;
+    border-top: 100px solid transparent;
+
+border-right: 100px solid transparent;
+
+position: relative;
+
+
+transform: rotate(-45deg);
+
+width: 600px;height: 600px;
+}
+.subhill2{   left: 355px;
+    top: -300px;
+    background-color: #ffff;
+    border: 100px solid #fff;
+    border-top: 100px solid transparent;
+
+border-right: 100px solid transparent;
+
+position: relative;
+
+
+transform: rotate(-45deg);
+
+width: 400px;height: 400px;
 }
